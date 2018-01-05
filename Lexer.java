@@ -1,11 +1,19 @@
 
 public class Lexer {
-	private  Jtype[] Jinstruction = {
+	
+	public Lexer(){ 
+		
+		//P.l("lexer");
+		
+	
+	}
+	
+	
+public  Jtype[] Jinstruction = {
 		
 		new Jtype("j", 2),
 		new Jtype("jal", 3),
-		
-		
+				
 	};
 public  Itype[] Iinstruction = {
 		
@@ -90,5 +98,19 @@ public  Rtype[] Rinstruction = {
 
 	
 };
+/*
+String[] words=rawLine.split(" ");
+if(words.length==3){
+	 return 0;
+}
+else if(words.length==2){
+	 return 0;
+}
+else if(words.length==1){
+	 return 0;
+}
+
+return 0;
+*/
 
 }

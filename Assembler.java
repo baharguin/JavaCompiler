@@ -4,6 +4,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Vector;
 
 
@@ -19,6 +20,14 @@ public class Assembler {
 		loadLines(address);
 		parseLines();
 		
+		
+	/*	Iterator<Line> it = lines.iterator();
+		while(it.hasNext())
+		{
+		    Object obj = it.next();
+	//	    P.l(" "+obj.toString());
+		}*/
+		
 	}
 	
 	//load Lines
@@ -28,7 +37,7 @@ public class Assembler {
 		FileReader fr = new FileReader(address);
 		BufferedReader br = new BufferedReader(fr);
 		
-		int num = 0;
+		int num =0;
 		
 		while ((text = br.readLine()) != null) {
 			P.l(text);

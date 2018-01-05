@@ -12,7 +12,7 @@ public class Main {
 	 */
 	public static void main(String[] args) throws IOException {
 		
-		Assembler a = new Assembler("C:/Users/bahar/Desktop/directives1.dlx");
+		Assembler a = new Assembler("C:/Users/bahar/Desktop/arithImmed.dlx");
 		
 		// TODO Auto-generated method stub
 		
@@ -21,7 +21,7 @@ public class Main {
 	}
 	
 	static void print(String s) {
-		System.out.println(s);
+		//System.out.println(s);
 	}
 	
 	
